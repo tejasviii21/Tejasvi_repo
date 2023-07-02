@@ -349,6 +349,8 @@ header .nav-col .navbar-nav li a:hover {
 
 
 /* =================== Slider Style Starts Here =================== */
+
+    
 .slider-detail {
   padding-top: 126px; }
   @media screen and (max-width: 992px) {
@@ -384,91 +386,90 @@ margin-left:138px; }
         bottom: 10px; }
         .slider-detail .carousel-caption h5 {
           font-size: 28px; } }
-    @media screen and (max-width: 800px) {
-      .slider-detail .carousel-caption h5 {
-        font-size: 18px; } }
-    .slider-detail .carousel-caption h5 {
-      text-align: center;
-      margin:0%;
-      font-size:35px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      margin-left: -40px;
-      font-weight: 600;
-      color:#000;
-    text-shadow:#d3d7ce; }
-    .slider-detail .carousel-caption p {
-      margin: 0%;
-      
-      font-size: 20px;
-      
-      font-weight: 400;
-      margin-top: 40px;
-      
-      color:#000;
-      text-shadow:#eaeaea;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
-  
-  .slider-detail .vbh {
-    margin-left: -40px; }
-    .slider-detail .vbh .btn {
-      padding: 10px 30px;
-      margin-top: 40px;
-      font-weight: 600;
-      font-size: 18px; }
-  .slider-detail .vdg-cur {
-    color: #ffffff; }
-  .slider-detail .fvgb {
-    color: #ffffff; }
+          @media screen and (max-width: 800px) {
+            .slider-detail .carousel-caption h5 {
+              font-size: 18px; } }
+          .slider-detail .carousel-caption h5 {
+            text-align: center;
+            margin:0%;
+            font-size:35px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: -40px;
+            font-weight: 600;
+            color:#000;
+          text-shadow:#d3d7ce; }
+          .slider-detail .carousel-caption p {
+            margin: 0%;
+            
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 40px;
+            
+            color:#000;
+            text-shadow:#eaeaea;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+        
+        .slider-detail .vbh {
+          margin-left: -40px; }
+          .slider-detail .vbh .btn {
+            padding: 10px 30px;
+            margin-top: 40px;
+            font-weight: 600;
+            font-size: 18px; }
+        .slider-detail .vdg-cur {
+          color: #ffffff; }
+        .slider-detail .fvgb {
+           color: #ffffff; }
 
-    /*additional*/
-    @keyframes opening {
-      0% {
-        transform: scale(0);
-        opacity: 0;
-      }
-      80% {
-        transform: scale(1.2);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
+          /*additional*/
+          @keyframes opening {
+            0% {
+              transform: scale(0);
+              opacity: 0;
+            }
+            80% {
+              transform: scale(1.2);
+              opacity: 1;
+            }
+            100% {
+              transform: scale(1);
+              opacity: 1;  
+            }
+          }
+          @keyframes closing {
+            0% {
+             transform: scale(1);
+             opacity: 1;
+           }
+           20% {
+             transform: scale(1.2);
+             opacity: 1;
+           }
+           100% {
+             transform: scale(0);
+             opacity: 0;
+           }
+         }
+         .opening-animation {
+          animation-name: opening;
+          animation-duration: 2s;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+        }
+        
+        .closing-animation {
+          animation-name: closing;
+          animation-duration: 2s;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+        }
+        
+        /* Add the closing animation to the active slide */
+        .carousel-item.active .opening-animation {
+          animation-name: closing;         
+        }
     
-    @keyframes closing {
-       0% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      20% {
-        transform: scale(1.2);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(0);
-        opacity: 0;
-      }
-    }
     
-    .opening-animation {
-      animation-name: opening;
-      animation-duration: 2s;
-      animation-timing-function: ease-in-out;
-      animation-fill-mode: forwards;
-    }
-    
-    .closing-animation {
-      animation-name: closing;
-      animation-duration: 2s;
-      animation-timing-function: ease-in-out;
-      animation-fill-mode: forwards;
-    }
-    
-    /* Add the closing animation to the active slide */
-    .carousel-item.active .opening-animation {
-      animation-name: closing;
-    }
     
 
 
@@ -702,26 +703,25 @@ margin-left:138px; }
   
 }
 
-  
 
-
- .boxabc
- {
-  width: 300px;
-  margin:10px;
-  height: 250px;
-  padding: 20px;
-  text-align:center ;
-  background-color:color-mix(in srgb, #95bdc6 25%, white 25%);
-  backdrop-filter: blur(2px);
-  overflow: auto;
- }
-  .boxabc h2{
-  font-family:'Times New Roman', Times, serif;
-  font-weight: 500;
-  color:hsl(0, 0%, 18%);
-  text-shadow: #95bdc6;
-  font-size: 25px;
+ 
+.boxabc
+{
+ width: 300px;
+ margin:10px;
+ height: 250px;
+ padding: 20px;
+ text-align:center ;
+ background-color:color-mix(in srgb, #95bdc6 25%, white 25%);
+ backdrop-filter: blur(2px);
+ overflow: auto;
+}
+ .boxabc h2{
+ font-family:'Times New Roman', Times, serif;
+ font-weight: 500;
+ color:hsl(0, 0%, 18%);
+ text-shadow: #95bdc6;
+ font-size: 25px;
   
   
  }
@@ -737,6 +737,49 @@ margin-left:138px; }
    text-align: left;
    
  }
+ 
+/*extra com*/
+.containerabc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 135vh;
+  background-image: url(../images/ABOUTA.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.boxabc {
+  width: calc(33.33% - 20px); /* Adjust the width based on the number of boxes you want per row */
+  margin: 10px;
+  height: calc(33.33vh - 20px); /* Adjust the height based on the desired height for each box */
+  padding: 20px;
+  text-align: center;
+  background-color: color-mix(in srgb, #95bdc6 25%, white 25%);
+  backdrop-filter: blur(2px);
+  overflow: auto;
+}
+
+.boxabc h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  color: hsl(0, 0%, 18%);
+  text-shadow: #95bdc6;
+  font-size: 25px;
+}
+
+.boxabc:hover h2 {
+  font-size: 35px;
+}
+
+.boxabc h6 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  text-align: left;
+}
+
  /*callforPAPER*/
   .background-sectiona
   {
@@ -793,10 +836,15 @@ margin-left:138px; }
       }
       
       .callforpaper .container {
+        display: flex;
+        flex-direction: column;
         text-align: center;
         overflow: auto;
       }
-      
+      .callforpaper .container > .container
+      {
+        flex-direction: column-reverse;
+      }
       .callforpaper .container h3 {
         text-align: center;
         
@@ -810,6 +858,10 @@ margin-left:138px; }
       .callforpaper .container .aboutright img {
         float: right;
       }
+      .callforpaper .col-md-6
+      {
+        width:100%;
+      }
       
       @media (max-width: 940x) {
         .callforpaper .container .aboutright {
@@ -822,6 +874,17 @@ margin-left:138px; }
           float: none;
           margin: 0 auto;
           
+        }
+      }
+      @media (min-width: 768px) {
+        .callforpaper .container {
+          flex-direction: row;
+        }
+        .callforpaper .container > .container {
+          flex-direction: row;
+        }
+        .callforpaper .col-md-6 {
+          width: 50%;
         }
       }
       
@@ -880,6 +943,18 @@ margin-left:138px; }
 
 .footer ul li a:hover {
   color: #fff;
+}
+@media(max-width:767px)
+{
+  .footer .row{
+    flex-wrap: wrap;
+  }
+  .footer .col-md-3{
+    flex-basis:50%;
+    max-width:50%;
+    border-right: none;
+    padding: 0;
+  }
 }
 
 .wthree_copy_right {
